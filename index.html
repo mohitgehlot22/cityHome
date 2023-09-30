@@ -1,0 +1,974 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title> City Home </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <header class="shadow container-fluid position-sticky top-0 bg-white">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" width="180px" height="80px" alt="">
+        </a>
+        <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling">
+          <i class="fa-solid fa-bars bar_icon text-light fs-2 rounded px-2 py-2"></i>
+        </button>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+          id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="navbar-collapse justify-content-end">
+            <div class="offcanvas-header">
+              <img src="images/logo.png" width="180px" height="80px" alt="">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link  px-2 fw-bold ms-1 active nav-color" aria-current="page" href="#">OVERVIEW</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  px-2 fw-bold ms-1 active" href="#">KEY FEATURES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  px-2 fw-bold ms-1 active" href="#">PRODUCTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  px-2 fw-bold ms-1 active">AMENITIES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  px-2 fw-bold ms-1 active">LOCATION MAP</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class=" px-2 fw-bold ms-1 nav-link active">FLOOR PLANS</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class=" px-2 fw-bold ms-1 nav-link active">VIEW SAMPLE FLAT</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class=" px-2 fw-bold ms-1 nav-link active">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class=" px-2 fw-bold ms-1 nav-link active">PRICELIST</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class=" px-2 fw-bold ms-1 nav-link active">WALKTHROUGH</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class=" px-2 fw-bold ms-1 nav-link active">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class=" px-2 fw-bold ms-1 nav-link active">
+                    CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </nav>
+    </header>
+    <div id="carouselExample" class="carousel slide z-3 position-relative" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" data-bs-interval="1000">
+          <img src="images/main_slider.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/8.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/7.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/12.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/10.jpg" class="img-fluid" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"
+        aria-hidden="true">
+        <span class="carousel-control-prev-icon fs-1 fw-bold text-bg-dark"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"
+        aria-hidden="true">
+        <span class="carousel-control-next-icon fs-1 text-bg-dark"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+    <div class="position-absolute card overlay p-1">
+      <h4 class="text-center p-2 text-light">HERO HOMES MOHALI PH-2</h4>
+      <ul class="list-group">
+        <li class="list-group-item fs-6 fw-bold p-3 mohali">RERA NO</li>
+        <li class="list-group-item fs-6 fw-bold p-3 mohali" style="color: #ed1c24;">PBRERA-SAS81-PR0522</li>
+        <li class="list-group-item fs-6 fw-bold p-3 mohali">Location</li>
+        <li class="list-group-item fs-6 fw-bold p-3 mohali" style="color: #ed1c24;">Sector 88, Mohali</li>
+        <li class="list-group-item fs-6 fw-bold p-3 mohali">Type</li>
+        <li class="list-group-item fs-6 fw-bold p-3 mohali">3BHK + Store (Premium)</li>
+      </ul>
+      <div class="text-center">
+        <button class="text-light downlod" onclick="pop()">Download Brochure</button>
+        <button class="text-light downlod">WALKTHROUGH</button>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container py-5">
+        <h1 class="text-center text-color">HERO HOMES MOHALI</h1>
+        <div class="row pt-4">
+          <div class="col-lg-6 col-12 bilding_img">
+            <img src="images/overview.jpg" alt="">
+          </div>
+          <div class="col-lg-6 col-12 py-lg-0 pt-5  content">
+            <p class="pb-2  w-75">
+              Hero Homes Mohali Phase-2 is a developing/developed project based on our 4 design pillars of the brand
+              philosophy – Fitness | Sustainability | Community | Creativity
+            </p>
+            <p class="w-75">
+              These four parameters help in adding distinctive features to the homes that lead to an enriched lifestyle
+              for you. The company of loved ones set amidst beautiful surroundings bespoke a lifestyle of pure bliss. At
+              Hero Homes Mohali, life is all about the fine things that make living worthwhile. Because a house is not
+              enough, it needs to be changed into a comfortable haven with delightful amenities, open green spaces, play
+              areas for children, a good neighbourhood and above all, a location that serves as an oasis of peace in the
+              chaos of city life. All these and more await you at Hero Homes for a complete life of bliss.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid key_feactures">
+      <div class="container pt-5">
+        <h2 class="text-center fw-bold">KEY FEATURES</h2>
+        <ul class="row p-0 pt-lg-5 justify-content-center">
+          <li class="col-md-6 py-2 col-12 my-2 fw-bold">
+            <i class="fa-solid fa-check-double"></i>
+            18.5 Acres Residential Complex
+          </li>
+          <li class="col-md-6 py-2 col-12 my-2 fw-bold">
+            <i class="fa-solid fa-check-double"></i>
+            25000 sq. feet Clubhouse
+          </li>
+          <li class="col-md-6 py-2 col-12 my-2 fw-bold">
+            <i class="fa-solid fa-check-double"></i>
+            Intelligent Traffic Flow
+          </li>
+          <li class="col-md-6 py-2 col-12 my-2 fw-bold">
+            <i class="fa-solid fa-check-double"></i>
+            Climate Responsive Master Plan
+          </li>
+          <li class="col-md-6 py-2 col-12 my-2 fw-bold">
+            <i class="fa-solid fa-check-double"></i>
+            Community Living
+          </li>
+          <li class="col-md-6 py-2 col-12 my-2 fw-bold">
+            <i class="fa-solid fa-check-double"></i>
+            Vastu Compliance
+          </li>
+          <li class="col-md-6 py-2 col-12 my-2 fw-bold">
+            <i class="fa-solid fa-check-double"></i>
+            ISO Certified
+          </li>
+          <li class="col-md-6 py-2 col-12 my-2 fw-bold">
+            <i class="fa-solid fa-check-double"></i>
+            Theme Gardens
+          </li>
+          <li class="col-md-6 py-2 col-12 my-2 fw-semibold">
+            <i class="fa-solid fa-check-double"></i>
+            IGBC Pre Gold Certification
+          </li>
+          <li class="col-md-6 py-2 col-12 my-2 fw-semibold">
+            <i class="fa-solid fa-check-double"></i>
+            5 Acres central green
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container pt-5">
+        <h2 class="text-center fw-bold">PRODUCTS</h2>
+        <p class="text-center pt-2">Sector 88, Mohali</p>
+        <div class="row">
+          <div class="col-lg-4  col-md-6 col-12 my-4">
+            <div class="card bg-white">
+              <img src="images/2.jpg" class="img-fluid" alt="">
+              <ul class="list-group product">
+                <li class="list-group-item">
+                  <p class="py-1 ps-4 fw-bold">
+                    <i class="fas fa-home"></i>
+                    3 BHK + Servent
+                  </p>
+                </li>
+                <li class="list-group-item">
+                  <p class="py-1 fw-bold ps-4">
+                    <i class="fas fa-map"></i>
+                    1950 sq.ft
+                  </p>
+                </li>
+                <li class="list-group-item">
+                  <p class="py-1 fw-bold ps-4">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    G+20
+                  </p>
+                </li>
+                <li class="list-group-item">
+                  <p class="py-1 fw-bold ps-4">
+                    <i class="fas fa-calendar"></i>
+                    2025*
+                  </p>
+                </li>
+                <div class="d-flex px-4 py-2 justify-content-around">
+                  <img src="images/events.png" height="30px" width="30px" alt="">
+                  <img src="images/board-games.png" height="30px" width="30px" alt="">
+                  <img src="images/cricket-pitch.png" height="30px" width="30px" alt="">
+                  <img src="images/basketball.png" height="30px" width="30px" alt="">
+                  <img src="images/yoga.png" height="30px" width="30px" alt="">
+                  <img src="images/tt.png" height="30px" width="30px" alt="">
+                  <img src="images/theater.png" height="30px" width="30px" alt="">
+                </div>
+                <div class="card-action" style="background:#ed1c24 !important;padding:1rem;">
+                  <i class="fa-solid fa-indian-rupee-sign text-light"></i>
+                  <span style="color:white;"> 1.25 Cr.</span>
+
+                  <a data-toggle="modal" data-target="#enform" target="new_blank"
+                    style="float:right;color:#fff;font-weight:bolder;">
+                    Enquiry Now
+                    <i class="fa fa-arrow-right" style="color:#fff"></i>
+                  </a>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12 col-md-6 my-4">
+            <div class="card bg-white">
+              <img src="images/6.jpg" class="img-fluid" alt="">
+              <ul class="list-group product">
+                <li class="list-group-item">
+                  <p class="py-1 ps-4 fw-bold">
+                    <i class="fas fa-home"></i>
+                    3 BHK + Store
+                  </p>
+                </li>
+                <li class="list-group-item">
+                  <p class="py-1 fw-bold ps-4">
+                    <i class="fas fa-map"></i>
+                    1661 sq.ft
+                  </p>
+                </li>
+                <li class="list-group-item">
+                  <p class="py-1 fw-bold ps-4">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    G+20
+                  </p>
+                </li>
+                <li class="list-group-item">
+                  <p class="py-1 fw-bold ps-4">
+                    <i class="fas fa-calendar"></i>
+                    2025*
+                  </p>
+                </li>
+                <div class="d-flex px-4 py-2">
+                  <img src="images/yoga.png" class="mx-2" height="30px" width="30px" alt="">
+                  <img src="images/spa.png" class="mx-2" height="30px" width="30px" alt="">
+                  <img src="images/swimming-pool.png" class="mx-2" height="30px" width="30px" alt="">
+                  <img src="images/squash.png" class="mx-2" height="30px" width="30px" alt="">
+                  <img src="images/theater.png" class="mx-2" height="30px" width="30px" alt="">
+                  <img src="images/basketball.png" class="mx-2" height="30px" width="30px" alt="">
+                </div>
+                <div class="card-action" style="background:#ed1c24 !important;padding:1rem;">
+                  <i class="fa-solid fa-indian-rupee-sign text-light"></i>
+                  <span style="color:white;"> 1.07 Cr.</span>
+
+                  <a data-toggle="modal" data-target="#enform" target="new_blank"
+                    style="float:right;color:#fff;font-weight:bolder;">
+                    Enquiry Now
+                    <i class="fa fa-arrow-right" style="color:#fff"></i>
+                  </a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-5 key_feactures">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center fw-bold">AMENITIES</h2>
+          </div>
+          <div class="row position-relative">
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/gym.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center">Gym</h5>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/indoor.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center px-4">Multi-indoor Games Facilities</h5>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/open-roof-garden.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center px-4">Open Roof Garden</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/playarea.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center px-4">Multiple Kids Play Areas</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/shopping.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center px-4">Shopping Centre</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/skating.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center px-4">Skating Rink</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/snooker.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center px-4">Billiards and Pool</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/spa.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center px-4">Spa and Jacuzzi</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/squash.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center px-4">Squash Court</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/swimming-pool.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center px-4">Swimming Pool and Toddler’s Pool</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/theater.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center px-4">Amphitheatre</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/tt.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center px-4">Table Tennis</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/yoga.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center px-4">Yoga Centre</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/basketball.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center px-4">Tennis Court & Basketball Court</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/board-games.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center px-4">Board Games</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/cricket-pitch.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center px-4">Cricket Pitch</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 p-2">
+              <div class="bg-white shadow rounded py-2 my-4">
+                <div class="text-center">
+                  <img src="images/events.png" height="75px" width="75px" alt="">
+                </div>
+                <h5 class=" py-4 text-center px-4">Terrace Area for Events</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container pt-5">
+        <h2 class="text-center">FLOOR PLANS</h2>
+        <div class="row py-5">
+          <div class="col-12 text-center">
+            <button class="btn fw-bold p-2 text-light mx-2 my-2 bhk3 active_bhk3">
+              3 BHK + Servant Type-I (1950 Sq.Ft)
+            </button>
+
+            <button class="btn fw-bold p-2 text-light mx-2 my-2 bhk3">
+              3 BHK + Store (1661 sq.ft.)
+            </button>
+
+            <button class="btn fw-bold p-2 text-light mx-2 my-2 bhk3">
+              3 BHK + Store Type-II (1481 sq. ft.)
+            </button>
+
+            <button class="btn fw-bold p-2 text-light mx-2 my-2 bhk3">
+              CLUSTER PLAN
+            </button>
+          </div>
+        </div>
+        <div class="floor_img text-center pt-4 active_floor_img">
+          <img src="images/mapp.jpeg" class="img-fluid" alt="">
+        </div>
+        <div class="floor_img text-center pt-4">
+          <img src="images/FloorPlan-3BHKStore.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="floor_img text-center pt-4">
+          <img src="images/FloorPlan-3BHKStore.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid pt-5 mt-5">
+      <div class="container">
+        <h2 class="text-center">MASTER PLAN</h2>
+        <div class="container text-center">
+          <img src="images/site-planMohaliPhase2.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-5 pt-5">
+      <div class="container">
+        <h2 class="text-center">VIEW SAMPLE FLAT</h2>
+        <div class="row pt-3">
+          <div class="col-12">
+            <img src="images/17.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid key_feactures mt-5">
+      <div class="container pt-5">
+        <h2 class="text-center">GALLERY</h2>
+        <div class="row pt-5">
+          <div class="col-12 text-center">
+            <button class="gallery_btn gallery_active fs-5 fw-bold mx-3 px-3 my-2 btn text-light">
+              GALLERY
+            </button>
+            <button class="btn gallery_btn text-light fs-5 fw-bold mx-3 px-3 my-2">
+              Construction Photos
+            </button>
+          </div>
+          <div class="active_gallrey gallrey">
+            <div class="row py-5">
+              <div class="col-lg-3 col-md-6 col-12 py-4">
+                <div class="text-center">
+                  <img src="images/1.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-4">
+                <div class="text-center">
+                  <img src="images/2.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-4">
+                <div class="text-center">
+                  <img src="images/3.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-4">
+                <div class="text-center">
+                  <img src="images/4.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-4">
+                <div class="text-center">
+                  <img src="images/5.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-4">
+                <div class="text-center">
+                  <img src="images/6.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-4">
+                <div class="text-center">
+                  <img src="images/7.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-4">
+                <div class="text-center">
+                  <img src="images/8.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-4">
+                <div class="text-center">
+                  <img src="images/9.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-4">
+                <div class="text-center">
+                  <img src="images/10.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-4">
+                <div class="text-center">
+                  <img src="images/11.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-4">
+                <div class="text-center">
+                  <img src="images/12.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-4">
+                <div class="text-center">
+                  <img src="images/13.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-4">
+                <div class="text-center">
+                  <img src="images/14.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-4">
+                <div class="text-center">
+                  <img src="images/15.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-4">
+                <div class="text-center">
+                  <img src="images/16.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="photos gallrey">
+            <div class="row">
+              <div class="col-lg-3 col-12 col-md-6 py-4">
+                <div>
+                  <img src="images/1.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-12 col-md-6 py-4">
+                <div>
+                  <img src="images/2.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-12 col-md-6 py-4">
+                <div>
+                  <img src="images/3.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-12 col-md-6 py-4">
+                <div>
+                  <img src="images/4.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-12 col-md-6 py-4">
+                <div>
+                  <img src="images/5.jpg" class="img-fluid rounded shadow" width="355px" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Price">
+            <h2 class="text-center fw-bold">PRICE LIST</h2>
+            <p class="text-center">Sector 88, Mohali</p>
+            <div class="text-center py-5">
+              <button class="btn px-3 py-2 fw-bold text-light active_bhk3">
+                PRICE LIST T - 10, 11 & 12
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-5">
+      <div class="container">
+        <h2 class="text-center">DOWNLOADS</h2>
+        <p class="text-center py-3">Sector 88, Mohali</p>
+        <div class="row mt-5 pt-5">
+          <div class="col-lg-4 col-md-6 my-3 col-12 position-relative py-4">
+            <div class="py-4 shadow">
+              <div class="icon_do text-center ">
+                <i class="fa fa-credit-card fs-2 pt-4" style="color: #ed1c24;" aria-hidden="true"></i>
+              </div>
+              <div class="textChange text-center mt-5 fw-bold pt-5">PAYMENT PLAN</div>
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-md-6 my-3 col-12 position-relative   py-4">
+            <div class="shadow py-4">
+              <div class="icon_do text-center ">
+                <i class="fa-solid fa-location-dot fs-2 pt-4" style="color: #ed1c24;" aria-hidden="true"></i>
+              </div>
+              <div class="textChange text-center mt-5 fw-bold pt-5"> SITE PLAN</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 my-3 col-12 position-relative   py-4">
+            <div class="shadow py-4">
+              <div class="icon_do text-center ">
+                <i class="fa-solid fa-book fs-2 pt-4" style="color: #ed1c24;" aria-hidden="true"></i>
+              </div>
+              <div class="textChange text-center mt-5 fw-bold pt-5">BROCHURE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-5">
+      <div class="container py-5">
+        <h2 class="text-center fw-bold">WALKTHROUGH</h2>
+        <p class="text-center py-3">Sector 88, Mohali</p>
+        <div class="row">
+          <div class="col-12 text-center">
+            <iframe width="730" height="300" src="https://www.youtube.com/embed/thhgLLlxs7k"
+              title="Welcome to Hero Homes, Mohali Phase-1" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-5">
+      <div class="container py-4">
+        <h2 class="text-center">LOCATION MAP</h2>
+        <p class="text-center py-3">Sector 88, Mohali .</p>
+        <div class="row">
+          <div class="col-12 text-center">
+            <img src="images/LocationMapMohaliPhase2.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container">
+        <h2 class="text-center">FREQUENTLY ASKED QUESTIONS</h2>
+        <p class="text-center pt-4">Sector 88, Mohali</p>
+        <div class="row">
+          <div class="col-12">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item accordion_ss ">
+                <h2 class="accordion-header ">
+                  <button class="accordion-button fw-bold   fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    ✅ What is total size of Hero Homes Mohali?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body fs-5 fw-bold">
+                    The project is built over an area of 18.49 Acres
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item accordion_ss ">
+                <h2 class="accordion-header ">
+                  <button class="accordion-button fw-bold   collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    ✅ Where is Hero Homes Mohali located?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body fs-5 fw-bold">The project is located in Sector-88, Mohali.</div>
+                </div>
+              </div>
+              <div class="accordion-item accordion_ss ">
+                <h2 class="accordion-header ">
+                  <button class="accordion-button fw-bold   collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    ✅ What all property types are there In Hero Homes Mohali?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body fs-5 fw-bold">
+                    The construction status of Phase 2 is New Launch.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item accordion_ss ">
+                <h2 class="accordion-header ">
+                  <button class="accordion-button fw-bold   collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    ✅ What all property types are there In Hero Homes Mohali?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body fs-5 fw-bold">
+                    The project is built over an area of 18.49 Acres
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item accordion_ss ">
+                <h2 class="accordion-header ">
+                  <button class="accordion-button fw-bold   collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    ✅ Which are the key amenities of Hero Homes Mohali?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body fs-5 fw-bold">Swimming Pool, Barbecue, Skating Rink, Squash Court,
+                    Billiards and Banquet Hall are some of the key amenities of Hero Homes Mohali.</div>
+                </div>
+              </div>
+              <div class="accordion-item accordion_ss ">
+                <h2 class="accordion-header ">
+                  <button class="accordion-button fw-bold   collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    ✅ What is the 3 bedroom price in Hero Homes Mohali?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body fs-5 fw-bold">
+                    The project offers 3 BHK units for 85.32 L.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item accordion_ss ">
+                <h2 class="accordion-header ">
+                  <button class="accordion-button fw-bold   collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    ✅ How many towers are there in Hero Homes Mohali?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body fs-5 fw-bold">
+                    There is 14 tower in the project, which offer a total of 1286 housing units.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item accordion_ss ">
+                <h2 class="accordion-header ">
+                  <button class="accordion-button fw-bold   collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    ✅ Does Hero Homes Mohali have swimming pool?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body fs-5 fw-bold">
+                    The project has a swimming pool
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container">
+        <h2 class="text-center">AWARDS</h2>
+        <p class="text-center">Sector 88, Mohali</p>
+        <div class="row pt-4">
+          <div class="col-lg-3 col-md-5 text-center col-12 py-4">
+            <img src="images/h1.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-3 col-md-5 text-center col-12 py-4">
+            <img src="images/h2.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-3 col-md-5 text-center col-12 py-4">
+            <img src="images/h3.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-3 col-md-5 text-center col-12 py-4">
+            <img src="images/h4.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-3 col-md-5 text-center col-12 py-4">
+            <img src="images/h5.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-3 col-md-5 text-center col-12 py-4">
+            <img src="images/h6.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-3 col-md-5 text-center col-12 py-4">
+            <img src="images/h6.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-3 col-md-5 text-center col-12 py-4">
+            <img src="images/h7.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid footer">
+      <div class="container footer_container">
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <div class="row">
+              <div class="col-5  ps-lg-5">
+                <img src="images/logo2.png" height="80px" width="150px" class="mt-5 bg-white" alt="">
+                <h4 class="pt-5 ps-2">Quick Links</h4>
+                <ul class="list-group">
+                  <li class="list-group-item fw-semibold  fs-6 border-0">Overview</li>
+                  <li class="list-group-item fw-semibold  fs-6 border-0">Products</li>
+                  <li class="list-group-item fw-semibold  fs-6 border-0">Location Map</li>
+                  <li class="list-group-item fw-semibold  fs-6 border-0">Gallery</li>
+                  <li class="list-group-item fw-semibold  fs-6 border-0">Walkthrough</li>
+                </ul>
+              </div>
+              <div class="col-5  mt-5 pt-5">
+                <div class="pt-4">
+                  <ul class="list-group mt-5 pt-5">
+                    <li class="list-group-item border-0 fw-semibold">Key Features</li>
+                    <li class="list-group-item border-0 fw-semibold">Amenities</li>
+                    <li class="list-group-item border-0 fw-semibold">FLOOR PLANS</li>
+                    <li class="list-group-item border-0 fw-semibold">PRICELIST</li>
+                    <li class="list-group-item border-0 fw-semibold">CONTACT</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12 pt-5">
+            <h4>Contact Us</h4>
+            <p class="fs-6 pt-4"> <i class="fa-solid fa-location-dot"></i> Sector 88, Mohali</p>
+            <p><a href="tel:+918968066698"><i class="fa-solid fa-phone"></i> +918968066698</a></p>
+            <p><a href="tel:+918968066698"><i class="fa-solid fa-phone"></i> +918968066698</a></p>
+            <h5 class="fw-bold">Authorized Service Partner Realty Nivesh </h5>
+            <div class="w-50 mt-4">
+              <img src="images/Realty-Nivesh-Dark-Background-.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-12 pt-2">
+            <p class="ps-lg-5 py-3 lh-5 fw-semibold">
+              Disclaimer : The content is for information purposes only and does not constitute an offer to avail of any
+              services. Prices mentioned are subject to change without notice and properties mentioned are subject to
+              availability. Images for representation purposes only. This site not to be claim as an official website of
+              Hero Homes Mohali.Realty Nivesh is an authorized marketing partner.We may send updates to the mobile
+              number/email id registered with us. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid footer">
+      <div class="container ">
+        <h6 class="text-center">Privacy Policy | Terms & Conditions | Copyright © 2022 Hero Homes. All rights reserved
+        </h6>
+      </div>
+    </div>
+    <div class="fixt">
+      <div class="Enquire_here  fs-5 fw-bold text-center" onclick="pop()">
+        ENQUIRE HERE
+      </div>
+      <div class="icon_fixd">
+        <div class="icon_fixd_i">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="icon_fixd_i">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <div class="icon_fixd_i">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+      </div>
+    </div>
+    <div class="pop">
+      <div class="ovarlay z-1" onclick="pop_closd()"></div>
+      <div class="popup p-3">
+        <div class="card py-3 px-3">
+          <div class="heding">
+            <h3 class="text-center">Connect with Us</h3>
+            <p class="text-center">Best Offers and Free Consultation</p>
+          </div>
+          <div class="form">
+            <div class="mt-3">
+              <label>Your Name</label><br>
+              <input type="text">
+            </div>
+            <div class="mt-3">
+              <label>Your Email</label><br>
+              <input type="text">
+            </div>
+            <div class="mt-3">
+              <label>Your Phone</label><br>
+              <input type="text">
+            </div>
+            <div class="mt-3">
+              <label>Your Message</label><br>
+              <textarea rows="6" style="width: 100%;"></textarea>
+            </div>
+            <div class="py-3">
+              <button class="rounded">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>

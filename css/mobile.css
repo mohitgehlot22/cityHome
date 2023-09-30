@@ -1,0 +1,33 @@
+@media only  screen and (min-width:0px)and (max-width:992px) {
+    
+    .nav-color{
+        color: #ed1c24 !important;
+        border-bottom:0px solid #000 !important; 
+    }
+    .overlay{
+        width: 100%;
+        position: static !important;
+        right: 0px;
+        top: 100% !important;
+    }
+    .downlod{
+        background: rgb(41 34 34);
+        font-size: 15px;
+        font-weight: bold;
+        font-family: roboto !important;
+        padding: 10px 22px;
+        border: none;
+        margin:20px auto;
+    }
+    .content p{
+    width: 100% !important;
+     text-align: center;
+    }
+    iframe{
+        width: 100%;
+        height: 400px ;
+    }
+    .popup{
+        width: 80%;
+    }
+}
